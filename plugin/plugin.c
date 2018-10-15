@@ -1,8 +1,7 @@
-#include <helper.h>
-#include "plugin.h"
+#include "impl.h"
 
 int
 plugin_get_four (void)
 {
-  return helper_get_three () + 1;
+  return impl_get_four ();
 }

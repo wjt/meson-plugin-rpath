@@ -1,9 +1,9 @@
-#include "plugin.h"
+#include "impl.h"
 
 int
 main (int argc,
       char **argv)
 {
-  int ok = plugin_get_four () == 4;
+  int ok = impl_get_four () == 4;
   return !ok;
 }
