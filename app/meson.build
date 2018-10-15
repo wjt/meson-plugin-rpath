@@ -28,6 +28,9 @@ pkgconfig.generate(
   libraries: libhelper,
   subdirs: [installed_header_subdir],
   variables: ['pluginsdir=' + pluginsdir],
+  # Without this line, the plugin & test get their rpath set in the builddir.
+  # With it, they don't.
+  requires: ['glib-2.0'],
 )
 
 config_h = configuration_data()
